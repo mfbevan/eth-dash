@@ -1,6 +1,11 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 
 import { PageContainer } from "../components";
+import {
+  AbsoluteButtonContainer,
+  DarkModeButton,
+} from "../components/dark-mode";
 import { Dashboards } from "../components/dashboards";
 import { InlineLink, PageSubtitle, PageTitle } from "../components/text";
 import { poppinsBody } from "../styles/fonts";
@@ -11,7 +16,7 @@ export default function Home() {
       <PageTitle>Ethereum Dashboards</PageTitle>
       <PageSubtitle pb="20px">
         All of your favourite Ethereum Dashboards in one place. Thanks to{" "}
-        <InlineLink as="span">
+        <InlineLink as="span" color={useColorModeValue("teal", "cyan")}>
           <Link href="https://github.com/superphiz/dashboards" target="_blank">
             Superphiz
           </Link>
@@ -19,7 +24,9 @@ export default function Home() {
         for getting this started!
       </PageSubtitle>
       <Dashboards />
+      <AbsoluteButtonContainer>
+        <DarkModeButton />
+      </AbsoluteButtonContainer>
     </PageContainer>
   );
 }
-

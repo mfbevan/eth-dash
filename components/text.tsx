@@ -20,7 +20,6 @@ export const PageSubtitle = chakra(Text, {
  */
 export const InlineLink = chakra(Text, {
   baseStyle: {
-    color: "teal",
     textDecor: "underline",
   },
 });

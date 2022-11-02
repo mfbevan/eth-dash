@@ -7,21 +7,29 @@ import {
   Image,
   VStack,
   Box,
+  HStack,
 } from "@chakra-ui/react";
 import { IDashboard } from "../constants";
 import { DashboardTag } from "./tags";
 import Link from "next/link";
+import { FiExternalLink } from "react-icons/fi";
 
 export const DashboardCard = ({ name, image, url, tags }: IDashboard) => (
   <Box p="15px">
     <Link href={url} target="_blank">
-      <Card bg={useColorModeValue("white", "gray.800")}>
+      <Card
+        bg={useColorModeValue("white", "gray.700")}
+        borderColor={useColorModeValue("gray.100", "gray.700")}
+      >
         <VStack>
           <DashboardImage src={`dashboard-images/${image}`} alt={image} />
-          <Title>{name}</Title>
+          <HStack>
+            {" "}
+            <Title>{name}</Title> <FiExternalLink />
+          </HStack>
           <Wrap>
             {tags?.map((_tag) => (
-              <DashboardTag key={url} tag={_tag} />
+              <DashboardTag key={_tag} tag={_tag} />
             ))}
           </Wrap>
         </VStack>
@@ -35,7 +43,7 @@ const DashboardImage = chakra(Image, {
     w: "300px",
     h: "150px",
     rounded: "md",
-    objectFit: "cover"
+    objectFit: "cover",
   },
 });
 
