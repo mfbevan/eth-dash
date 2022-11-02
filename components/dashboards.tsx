@@ -1,18 +1,20 @@
-import { Wrap, chakra } from "@chakra-ui/react";
+import { Flex, chakra } from "@chakra-ui/react";
 import { dashboards } from "../constants";
 import { DashboardCard } from "./cards";
 
 export const Dashboards = () => (
-  <DashboardContainer spacing="20px">
+  <DashboardContainer>
     {dashboards.map((_dash) => (
       <DashboardCard {..._dash} />
     ))}
   </DashboardContainer>
 );
 
-const DashboardContainer = chakra(Wrap, {
+const DashboardContainer = chakra(Flex, {
   baseStyle: {
+    flexFlow: "row wrap",
+    display: "flex",
+    justifyContent: "center",
     justify: "center",
-    p: "20px",
   },
 });
