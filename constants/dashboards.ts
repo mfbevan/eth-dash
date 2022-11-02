@@ -140,7 +140,7 @@ export const dashboards: IDashboard[] = [
   {
     name: "MEV Watch",
     url: "https://mevwatch.info",
-    image: "mev-boost.jpg",
+    image: "mev-watch.jpg",
     tags: [IDashboardTag.MEV],
   },
   {
