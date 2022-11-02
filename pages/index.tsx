@@ -1,13 +1,13 @@
-import { Box, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 import { PageContainer } from "../components";
 import { Dashboards } from "../components/dashboards";
 import { InlineLink, PageSubtitle, PageTitle } from "../components/text";
+import { poppinsBody } from "../styles/fonts";
 
 export default function Home() {
   return (
-    <PageContainer>
+    <PageContainer className={poppinsBody.className}>
       <PageTitle>Ethereum Dashboards</PageTitle>
       <PageSubtitle pb="20px">
         All of your favourite Ethereum Dashboards in one place. Thanks to{" "}

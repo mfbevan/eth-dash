@@ -19,7 +19,7 @@ export const DashboardCard = ({ name, description, url, tags }: IDashboard) => (
         <Title>{name}</Title>
         <TagsContainer>
           {tags?.map((_tag) => (
-            <DashboardTag tag={_tag} />
+            <DashboardTag key={url} tag={_tag} />
           ))}
         </TagsContainer>
       </VStack>
@@ -29,16 +29,15 @@ export const DashboardCard = ({ name, description, url, tags }: IDashboard) => (
 
 const DashboardImage = chakra(Image, {
   baseStyle: {
-    w: "250px",
-    h: "120px",
+    w: "300px",
+    h: "150px",
+    rounded: "lg"
   },
 });
 
 const Title = chakra(Text, {
   baseStyle: {
     fontSize: "1rem",
-    fontWeight: 600
-
   },
 });
 
