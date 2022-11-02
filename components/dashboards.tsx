@@ -5,7 +5,7 @@ import { DashboardCard } from "./cards";
 export const Dashboards = () => (
   <DashboardContainer>
     {dashboards.map((_dash) => (
-      <DashboardCard {..._dash} />
+      <DashboardCard key={_dash.name} {..._dash} />
     ))}
   </DashboardContainer>
 );
