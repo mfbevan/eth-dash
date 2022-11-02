@@ -24,7 +24,6 @@ export const DashboardCard = ({ name, image, url, tags }: IDashboard) => (
         <VStack>
           <DashboardImage src={`dashboard-images/${image}`} alt={image} />
           <HStack>
-            {" "}
             <Title>{name}</Title> <FiExternalLink />
           </HStack>
           <Wrap>
