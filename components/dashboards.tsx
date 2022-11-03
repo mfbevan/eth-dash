@@ -1,17 +1,18 @@
-import { Flex, chakra, VStack, HStack } from "@chakra-ui/react";
+import { Flex, chakra, VStack, HStack, Stack } from "@chakra-ui/react";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
 import { dashboards, IDashboard, IDashboardTag } from "../constants";
 import { DashboardCard } from "./small-card";
 import { TagSelector } from "./tag-selector";
 import { DashboardCardDetailed } from "./detailed-card";
 import { IDashboardSize, SizeSelector } from "./size-selector";
+import { DashboardListItem } from "./list-view.";
 
 const DashboardComponent = (
   dashboard: IDashboard
 ): Record<IDashboardSize, ReactElement> => ({
   [IDashboardSize.Small]: <DashboardCard {...dashboard} />,
   [IDashboardSize.Detailed]: <DashboardCardDetailed {...dashboard} />,
-  [IDashboardSize.List]: <DashboardCard {...dashboard} />,
+  [IDashboardSize.List]: <DashboardListItem {...dashboard} />,
 });
 
 export const Dashboards = () => {
@@ -28,12 +29,9 @@ export const Dashboards = () => {
     ? dashboards.filter(({ tags }) => tags?.includes(selectedTag))
     : dashboards;
 
-  useEffect(() => {
-    console.log(selectedSize);
-  }, [selectedSize]);
   return (
     <VStack pt="20px">
-      <HStack>
+      <Stack direction={{ base: "column", sm: "row" }}>
         <TagSelector
           selectedTag={selectedTag}
           setSelectedTag={setSelectedTag}
@@ -42,7 +40,7 @@ export const Dashboards = () => {
           selectedSize={selectedSize}
           setSelectedSize={setSelectedSize}
         />
-      </HStack>
+      </Stack>
       <DashboardContainer>
         {filteredDashboards.map((_dash) => {
           const SelectedComponent = () =>

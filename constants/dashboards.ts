@@ -123,7 +123,7 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.Staking],
   },
   {
-    name: "Hildobby's ETH Staking Deposits",
+    name: "Hildobby's Deposits",
     description:
       "This dashboard tracks ETH sent to the Consensus Layer deposit address.",
     url: "https://dune.com/hildobby/ETH2-Deposits",
@@ -225,7 +225,7 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.MEV],
   },
   {
-    name: "Chainsight Analytics MEV",
+    name: "Chainsight Analytics",
     description:
       "This dashboard tracks mev-boost blocks with a known pattern in them, representing blocks created by block-builders",
     url: "https://dune.com/ChainsightAnalytics/mev-after-ethereum-merge",
