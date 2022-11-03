@@ -39,8 +39,8 @@ export const DashboardCard = ({ name, image, url, tags }: IDashboard) => (
 
 const DashboardImage = chakra(Image, {
   baseStyle: {
-    w: "300px",
-    h: "150px",
+    w: "310px",
+    h: "180px",
     rounded: "md",
     objectFit: "cover",
   },
@@ -55,7 +55,7 @@ const Title = chakra(Text, {
 const Card = chakra(Center, {
   baseStyle: {
     w: "350px",
-    h: "250px",
+    h: "280px",
     borderWidth: "1px",
     rounded: "lg",
     shadow: "lg",

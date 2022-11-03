@@ -1,5 +1,5 @@
 export enum IDashboardTag {
-  General = "Ethereum",
+  General = "General Ethereum",
   EcosystemHealth = "Ecosystem Health",
   Staking = "Staking",
   MonetaryPolicy = "Monetary Policy",
@@ -8,6 +8,17 @@ export enum IDashboardTag {
   DuneAnalytics = "Dune Analytics",
   NFTs = "NFTs",
 }
+
+export const TagColor: Record<IDashboardTag, string> = {
+  [IDashboardTag.General]: "cyan",
+  [IDashboardTag.EcosystemHealth]: "green",
+  [IDashboardTag.Staking]: "red",
+  [IDashboardTag.MonetaryPolicy]: "yellow",
+  [IDashboardTag.DeFi]: "teal",
+  [IDashboardTag.MEV]: "blue",
+  [IDashboardTag.DuneAnalytics]: "purple",
+  [IDashboardTag.NFTs]: "pink",
+};
 
 export interface IDashboard {
   name: string;
@@ -108,6 +119,12 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.MonetaryPolicy],
   },
   {
+    name: "Flippening Watch",
+    url: "https://buybitcoinworldwide.com/flippening/",
+    image: "flippening-watch.jpg",
+    tags: [IDashboardTag.MonetaryPolicy],
+  },
+  {
     name: "DeFi Llama",
     url: "https://defillama.com/",
     image: "defi-llama.jpg",
@@ -150,10 +167,34 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.MEV],
   },
   {
+    name: "Inclusion Watch",
+    url: "https://www.inclusion.watch/",
+    image: "inclusion-watch.jpg",
+    tags: [IDashboardTag.MEV],
+  },
+  {
+    name: "MEV Relays - Uptime Monitor",
+    url: "https://mev-relays.beaconstate.info/",
+    image: "mev-beaconstate.jpg",
+    tags: [IDashboardTag.MEV],
+  },
+  {
     name: "Chainsight Analytics MEV",
     url: "https://dune.com/ChainsightAnalytics/mev-after-ethereum-merge",
     image: "chain-analytics.jpg",
     tags: [IDashboardTag.MEV, IDashboardTag.DuneAnalytics],
+  },
+  {
+    name: "Tornado Warnings",
+    url: "https://tornado-warning.info/",
+    image: "tornado-warnings.jpg",
+    tags: [IDashboardTag.MEV],
+  },
+  {
+    name: "Beaconchain Relays",
+    url: "https://beaconcha.in/relays",
+    image: "beaconchain-relays.jpg",
+    tags: [IDashboardTag.MEV],
   },
   {
     name: "icy.tools",

@@ -24,7 +24,7 @@ export default function Home() {
         </InlineLink>{" "}
         for getting this started!
       </PageSubtitle>
-<Socials />
+      <Socials />
       <Dashboards />
       <AbsoluteButtonContainer>
         <DarkModeButton />
