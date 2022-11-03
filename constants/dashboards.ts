@@ -165,6 +165,7 @@ export const dashboards: IDashboard[] = [
     name: "MEV Relays - Uptime Monitor",
     url: "https://mev-relays.beaconstate.info/",
     image: "mev-beaconstate.jpg",
+    tags: [IDashboardTag.MEV],
   },
   {
     name: "Chainsight Analytics MEV",
