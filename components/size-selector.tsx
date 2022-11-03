@@ -40,7 +40,7 @@ export const SizeSelector = ({
       {Object.values(IDashboardSize).map((size) => {
         const { Icon, label } = DashboardSizeDetails[size];
         return (
-          <Tooltip label={label} rounded="md" border="1px solid">
+          <Tooltip key={size} label={label} rounded="md" border="1px solid">
             <IconButton
               size="lg"
               aria-label={label}

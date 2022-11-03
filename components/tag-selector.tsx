@@ -12,6 +12,8 @@ export const TagSelector = ({ selectedTag, setSelectedTag }: ITagSelector) => {
     setSelectedTag(e.target.value as IDashboardTag);
   };
 
+  const deselectedBgColor = useColorModeValue("gray.100", "gray.700");
+
   return (
     <Select
       w="250px"
@@ -22,7 +24,7 @@ export const TagSelector = ({ selectedTag, setSelectedTag }: ITagSelector) => {
       bg={
         selectedTag
           ? `${TagColor[selectedTag as IDashboardTag]}.500`
-          : useColorModeValue("gray.100", "gray.700")
+          : deselectedBgColor
       }
     >
       {Object.values(IDashboardTag).map((tag) => (
