@@ -1,7 +1,7 @@
 import { useColorMode, Button, Box, chakra } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-enum ColorMode {
+export enum ColorMode {
   Light = "light",
   Dark = "dark",
 }

@@ -1,5 +1,5 @@
 export enum IDashboardTag {
-  General = "Ethereum",
+  General = "General Ethereum",
   EcosystemHealth = "Ecosystem Health",
   Staking = "Staking",
   MonetaryPolicy = "Monetary Policy",
@@ -8,6 +8,17 @@ export enum IDashboardTag {
   DuneAnalytics = "Dune Analytics",
   NFTs = "NFTs",
 }
+
+export const TagColor: Record<IDashboardTag, string> = {
+  [IDashboardTag.General]: "cyan",
+  [IDashboardTag.EcosystemHealth]: "green",
+  [IDashboardTag.Staking]: "red",
+  [IDashboardTag.MonetaryPolicy]: "yellow",
+  [IDashboardTag.DeFi]: "teal",
+  [IDashboardTag.MEV]: "blue",
+  [IDashboardTag.DuneAnalytics]: "purple",
+  [IDashboardTag.NFTs]: "pink",
+};
 
 export interface IDashboard {
   name: string;
