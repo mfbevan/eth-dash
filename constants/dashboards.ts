@@ -171,6 +171,14 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.DeFi],
   },
   {
+    name: "Stablecoins.wtf",
+    description:
+      "We accumulate quantitative live-data of major stablecoins in a single dashboard. And we aim to make the data understandable by everyone.",
+    url: "https://stablecoins.wtf",
+    image: "stablecoins-wtf.jpg",
+    tags: [IDashboardTag.DeFi],
+  },
+  {
     name: "Flashbots",
     description:
       "The Flashbots MEV-Boost transparency dashboard is a public dashboard of metrics related to the Flashbots MEV-Boost relay and builder.",
