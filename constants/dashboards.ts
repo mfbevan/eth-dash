@@ -211,7 +211,7 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.MEV],
   },
   {
-    name: "Eigen Phi",
+    name: "EigenPhi",
     description:
       "EigenPhi is a full-scale DeFi in-depth data platform for everyday DeFi users, Crypto traders & arbitragers.",
     url: "https://eigenphi.io",
