@@ -264,4 +264,12 @@ export const dashboards: IDashboard[] = [
     image: "icy-tools.jpg",
     tags: [IDashboardTag.NFTs],
   },
+  {
+    name: "Metrika Relay Monitor",
+    description:
+      "Relay Monitoring by Metrika to ensure performance and bid validation",
+    url: "https://app.metrika.co/dashboard/ethereum/relay-monitor/north-america-east?tr=1d",
+    image: "metrika-mev.jpg",
+    tags: [IDashboardTag.MEV],
+  },
 ];
