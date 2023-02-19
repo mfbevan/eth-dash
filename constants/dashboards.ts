@@ -272,4 +272,12 @@ export const dashboards: IDashboard[] = [
     image: "metrika-mev.jpg",
     tags: [IDashboardTag.MEV],
   },
+  {
+    name: "StakeBoard",
+    description:
+      "StakeBoard is a beginner-friendly staking dashboard",
+    url: "https://app.stakepark.xyz",
+    image: "stakeboard.jpg",
+    tags: [IDashboardTag.Staking],
+  },
 ];
