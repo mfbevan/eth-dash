@@ -123,6 +123,14 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.Staking],
   },
   {
+    name: "StakeBoard",
+    description:
+      "StakeBoard is a beginner-friendly staking dashboard",
+    url: "https://app.stakepark.xyz",
+    image: "stakeboard.jpg",
+    tags: [IDashboardTag.Staking],
+  },
+  {
     name: "Hildobby's Deposits",
     description:
       "This dashboard tracks ETH sent to the Consensus Layer deposit address.",
