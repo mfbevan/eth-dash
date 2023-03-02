@@ -134,7 +134,7 @@ export const dashboards: IDashboard[] = [
     name: "Hildobby's Deposits",
     description:
       "This dashboard tracks ETH sent to the Consensus Layer deposit address.",
-    url: "https://dune.com/hildobby/ETH2-Deposits",
+    url: "https://dune.com/hildobby/eth2-staking",
     image: "hildobby.jpg",
     tags: [IDashboardTag.Staking, IDashboardTag.DuneAnalytics],
   },
