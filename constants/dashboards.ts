@@ -81,7 +81,7 @@ export const dashboards: IDashboard[] = [
     name: "Rated.Network",
     description:
       "A measure of uptime — how available a validator or entity has been to provide network services.",
-    url: "https://www.rated.network/?network=mainnet&view=entity",
+    url: "https://www.rated.network/?network=mainnet&view=nodeOperator",
     image: "rated-network.jpg",
     tags: [IDashboardTag.Staking],
   },
