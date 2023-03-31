@@ -7,6 +7,7 @@ export enum IDashboardTag {
   MEV = "MEV",
   DuneAnalytics = "Dune Analytics",
   NFTs = "NFTs",
+  AccountAbstraction = "Account Abstraction",
 }
 
 export const TagColor: Record<IDashboardTag, string> = {
@@ -18,6 +19,7 @@ export const TagColor: Record<IDashboardTag, string> = {
   [IDashboardTag.MEV]: "blue",
   [IDashboardTag.DuneAnalytics]: "purple",
   [IDashboardTag.NFTs]: "pink",
+  [IDashboardTag.AccountAbstraction]: "orange",
 };
 
 export interface IDashboard {
@@ -280,4 +282,20 @@ export const dashboards: IDashboard[] = [
     image: "metrika-mev.jpg",
     tags: [IDashboardTag.MEV],
   },
+  {
+    name: "Blocknative 4337 UserOps Explorer",
+    description:
+      "Dashboard to explore pending, confirmed, and failed ERC-4337 UserOperations",
+    url: "https://4337.blocknative.com",
+    image: "blocknative-user-ops.jpg",
+    tags: [IDashboardTag.AccountAbstraction],
+    },
+    {
+    name: "Jiffyscan",
+    description:
+      "User Op explorer for ERC-4337",
+    url: "https://www.jiffyscan.xyz/",
+    image: "jiffyscan.jpg",
+    tags: [IDashboardTag.AccountAbstraction],
+    },
 ];
