@@ -46,6 +46,14 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.General],
   },
   {
+    name: "Blocknative Mempool Explorer",
+    description:
+      "Realtime mempool monitoring to visualize, capture, and filter enriched pre-chain event data.",
+    url: "https://explorer.blocknative.com",
+    image: "blocknative-mempool-explorer.jpg",
+    tags: [IDashboardTag.General],
+  },
+  {
     name: "Project Sunshine",
     description:
       "A dashboard to measure the health of Ethereum's decentralization.",
