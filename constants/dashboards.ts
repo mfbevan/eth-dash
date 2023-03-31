@@ -48,11 +48,11 @@ export const dashboards: IDashboard[] = [
   {
     name: "Blocknative Mempool Explorer",
     description:
-    "Realtime mempool monitoring to visualize, capture, and filter enriched pre-chain event data.",
+      "Realtime mempool monitoring to visualize, capture, and filter enriched pre-chain event data.",
     url: "https://explorer.blocknative.com",
-    image: "blocknative-mempool-explorer.jpg"
+    image: "blocknative-mempool-explorer.jpg",
     tags: [IDashboardTag.General],
-    },
+  },
   {
     name: "Project Sunshine",
     description:
