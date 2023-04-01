@@ -134,8 +134,7 @@ export const dashboards: IDashboard[] = [
   },
   {
     name: "StakeBoard",
-    description:
-      "StakeBoard is a beginner-friendly staking dashboard",
+    description: "StakeBoard is a beginner-friendly staking dashboard",
     url: "https://app.stakepark.xyz",
     image: "stakeboard.jpg",
     tags: [IDashboardTag.Staking],
@@ -297,13 +296,12 @@ export const dashboards: IDashboard[] = [
     url: "https://4337.blocknative.com",
     image: "blocknative-user-ops.jpg",
     tags: [IDashboardTag.AccountAbstraction],
-    },
-    {
+  },
+  {
     name: "Jiffyscan",
-    description:
-      "User Op explorer for ERC-4337",
+    description: "User Op explorer for ERC-4337",
     url: "https://www.jiffyscan.xyz/",
     image: "jiffyscan.jpg",
     tags: [IDashboardTag.AccountAbstraction],
-    },
+  },
 ];
