@@ -142,11 +142,35 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.Staking],
   },
   {
-    name: "Hildobby's Deposits",
+    name: "Nansen Ethereum Shanghai (Shapella)",
     description:
-      "This dashboard tracks ETH sent to the Consensus Layer deposit address.",
+      "This dashboard highlights all the key data points around the Shapella upgrade",
+    url: "https://query.nansen.ai/public/dashboards/Hk93n66vsO0uvycfui8ypF2xcpNhpraxfwX5AWZJ",
+    image: "nansen.png",
+    tags: [IDashboardTag.Staking],
+  },
+  {
+    name: "Metrika Withdrawals",
+    description:
+      "Dashboard by Metrika to monitor the Ethereum withdrawal process",
+    url: "https://app.metrika.co/ethereum/dashboard/withdrawals-overview?tr=1d",
+    image: "metrika-withdrawals.png",
+    tags: [IDashboardTag.Staking],
+  },
+  {
+    name: "Ethereum Shanghai Unlock",
+    description:
+      "Dashboard by Token Unlocks to monitor the Ethereum Shanghai ecosystem.",
+    url: "https://token.unlocks.app/ethereum-shanghai",
+    image: "token-unlocks.png",
+    tags: [IDashboardTag.Staking],
+  },
+  {
+    name: "Hildobby's Staking",
+    description:
+      "This dashboard tracks ETH sent to the Consensus Layer deposit address & beacon chain outflow.",
     url: "https://dune.com/hildobby/eth2-staking",
-    image: "hildobby.jpg",
+    image: "hildobby-staking.png",
     tags: [IDashboardTag.Staking, IDashboardTag.DuneAnalytics],
   },
   {
