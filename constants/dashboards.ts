@@ -8,6 +8,7 @@ export enum IDashboardTag {
   DuneAnalytics = "Dune Analytics",
   NFTs = "NFTs",
   AccountAbstraction = "Account Abstraction",
+  Layer2 = "Layer 2s",
 }
 
 export const TagColor: Record<IDashboardTag, string> = {
@@ -20,6 +21,7 @@ export const TagColor: Record<IDashboardTag, string> = {
   [IDashboardTag.DuneAnalytics]: "purple",
   [IDashboardTag.NFTs]: "pink",
   [IDashboardTag.AccountAbstraction]: "orange",
+  [IDashboardTag.Layer2]: "pink",
 };
 
 export interface IDashboard {
@@ -303,5 +305,21 @@ export const dashboards: IDashboard[] = [
     url: "https://www.jiffyscan.xyz/",
     image: "jiffyscan.jpg",
     tags: [IDashboardTag.AccountAbstraction],
+  },
+  {
+    name: "L2 Beat",
+    description:
+      "Analytics and research website about Ethereum layer 2 scaling, comparing major protocols live on Ethereum today.",
+    url: "https://l2beat.com/",
+    image: "l2beat.png",
+    tags: [IDashboardTag.Layer2],
+  },
+  {
+    name: "L2 Fees",
+    description:
+      "Ethereum Layer-1 is expensive. How much does it cost to use Layer-2?",
+    url: "https://l2fees.info/",
+    image: "l2fees.png",
+    tags: [IDashboardTag.Layer2],
   },
 ];
