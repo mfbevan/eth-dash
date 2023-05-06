@@ -1,4 +1,5 @@
 export enum IDashboardTag {
+  Layer2 = "Layer 2s",
   General = "General Ethereum",
   EcosystemHealth = "Ecosystem Health",
   Staking = "Staking",
@@ -8,10 +9,10 @@ export enum IDashboardTag {
   DuneAnalytics = "Dune Analytics",
   NFTs = "NFTs",
   AccountAbstraction = "Account Abstraction",
-  Layer2 = "Layer 2s",
 }
 
 export const TagColor: Record<IDashboardTag, string> = {
+  [IDashboardTag.Layer2]: "pink",
   [IDashboardTag.General]: "cyan",
   [IDashboardTag.EcosystemHealth]: "green",
   [IDashboardTag.Staking]: "red",
@@ -21,7 +22,6 @@ export const TagColor: Record<IDashboardTag, string> = {
   [IDashboardTag.DuneAnalytics]: "purple",
   [IDashboardTag.NFTs]: "pink",
   [IDashboardTag.AccountAbstraction]: "orange",
-  [IDashboardTag.Layer2]: "pink",
 };
 
 export interface IDashboard {
@@ -33,6 +33,22 @@ export interface IDashboard {
 }
 
 export const dashboards: IDashboard[] = [
+  {
+    name: "L2 Beat",
+    description:
+      "Analytics and research website about Ethereum layer 2 scaling, comparing major protocols live on Ethereum today.",
+    url: "https://l2beat.com/",
+    image: "l2beat.png",
+    tags: [IDashboardTag.Layer2],
+  },
+  {
+    name: "L2 Fees",
+    description:
+      "Ethereum Layer-1 is expensive. How much does it cost to use Layer-2?",
+    url: "https://l2fees.info/",
+    image: "l2fees.png",
+    tags: [IDashboardTag.Layer2],
+  },
   {
     name: "AlphaDay",
     description:
@@ -74,6 +90,14 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.EcosystemHealth],
   },
   {
+    name: "Gnosis d14n",
+    description:
+      "d14n.info is a real-time dashboard that measures decentralization of the Gnosis Chain and Ethereum networks.",
+    url: "https://d14n.info",
+    image: "gnosis.png",
+    tags: [IDashboardTag.EcosystemHealth],
+  },
+  {
     name: "Miga Labs Crawler",
     description:
       "The Armiarma Crawler Dashboard displays the observed client distribution in the Eth2 network in real-time.",
@@ -90,6 +114,21 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.EcosystemHealth],
   },
   {
+    name: "Execution Diversity",
+    description:
+      "About the supermajority client risk of the execution layer, especially the client usage of staking services and pools.",
+    url: "https://execution-diversity.info/",
+    image: "execution-diversity.png",
+    tags: [IDashboardTag.EcosystemHealth],
+  },
+  {
+    name: "Client Diversity.org",
+    description: "Consensus & Execution layer client distribution.",
+    url: "https://clientdiversity.org",
+    image: "client-diversity.jpg",
+    tags: [IDashboardTag.EcosystemHealth],
+  },
+  {
     name: "Rated.Network",
     description:
       "A measure of uptime — how available a validator or entity has been to provide network services.",
@@ -98,26 +137,11 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.Staking],
   },
   {
-    name: "Client Diversity.org",
-    description: "Consensus & Execution layer client distribution.",
-    url: "https://clientdiversity.org",
-    image: "client-diversity.jpg",
-    tags: [IDashboardTag.Staking],
-  },
-  {
     name: "Ethereum Pools.info",
     description:
       "We aggragate and monitor Ethereum validators belonging to well known entities (exchanges, companies, pools, operators).",
     url: "https://ethereumpools.info/d/ox1NIwf7k/ethereumpools-public?orgId=1&kiosk&refresh=5m",
     image: "eth-pools.jpg",
-    tags: [IDashboardTag.Staking],
-  },
-  {
-    name: "EthSta.com",
-    description:
-      "Ethereum staking pool statistics - validators, deposit balances, validator distribution",
-    url: "https://ethsta.com",
-    image: "ethsta.jpg",
     tags: [IDashboardTag.Staking],
   },
   {
@@ -329,21 +353,5 @@ export const dashboards: IDashboard[] = [
     url: "https://www.jiffyscan.xyz/",
     image: "jiffyscan.jpg",
     tags: [IDashboardTag.AccountAbstraction],
-  },
-  {
-    name: "L2 Beat",
-    description:
-      "Analytics and research website about Ethereum layer 2 scaling, comparing major protocols live on Ethereum today.",
-    url: "https://l2beat.com/",
-    image: "l2beat.png",
-    tags: [IDashboardTag.Layer2],
-  },
-  {
-    name: "L2 Fees",
-    description:
-      "Ethereum Layer-1 is expensive. How much does it cost to use Layer-2?",
-    url: "https://l2fees.info/",
-    image: "l2fees.png",
-    tags: [IDashboardTag.Layer2],
   },
 ];
