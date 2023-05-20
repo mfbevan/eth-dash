@@ -7,3 +7,4 @@ export * from "./tag-selector";
 export * from "./socials";
 export * from "./tags";
 export * from "./text";
+export * from "./extension-content";

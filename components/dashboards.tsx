@@ -1,11 +1,13 @@
 import { Flex, chakra, VStack, HStack, Stack } from "@chakra-ui/react";
 import { ReactElement, ReactNode, useEffect, useState } from "react";
+
 import { dashboards, IDashboard, IDashboardTag } from "../constants";
+
+import { DashboardCardDetailed } from "./detailed-card";
+import { DashboardListItem } from "./list-view.";
+import { IDashboardSize, SizeSelector } from "./size-selector";
 import { DashboardCard } from "./small-card";
 import { TagSelector } from "./tag-selector";
-import { DashboardCardDetailed } from "./detailed-card";
-import { IDashboardSize, SizeSelector } from "./size-selector";
-import { DashboardListItem } from "./list-view.";
 
 const DashboardComponent = (
   dashboard: IDashboard

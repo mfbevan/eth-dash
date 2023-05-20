@@ -1,5 +1,6 @@
 import { Select, useColorModeValue } from "@chakra-ui/react";
 import { ChangeEvent, Dispatch, SetStateAction } from "react";
+
 import { IDashboardTag, TagColor } from "../constants";
 
 interface ITagSelector {

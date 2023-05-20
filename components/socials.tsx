@@ -1,4 +1,5 @@
 import { HStack, Tooltip, Link } from "@chakra-ui/react";
+
 import { socials } from "../constants";
 
 export const Socials = () => (

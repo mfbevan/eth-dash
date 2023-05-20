@@ -1,5 +1,6 @@
-import { useColorModeValue } from "@chakra-ui/react";
+import { useColorModeValue, Button, Flex } from "@chakra-ui/react";
 import Link from "next/link";
+import { ImChrome } from "react-icons/im";
 
 import { PageContainer } from "../components";
 import {
@@ -24,11 +25,13 @@ export default function Home() {
         </InlineLink>{" "}
         for getting this started!
       </PageSubtitle>
-      <Socials />
+      <Flex gap="20px">
+        <Socials />
+        <Link href="/extension">
+          <Button rightIcon={<ImChrome />}>Eth Dash Extension</Button>
+        </Link>
+      </Flex>
       <Dashboards />
-      <AbsoluteButtonContainer>
-        <DarkModeButton />
-      </AbsoluteButtonContainer>
     </PageContainer>
   );
 }

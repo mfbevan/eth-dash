@@ -1,4 +1,5 @@
 import { Tag } from "@chakra-ui/react";
+
 import { IDashboardTag, TagColor } from "../constants";
 
 export const DashboardTag = ({ tag }: { tag: IDashboardTag }) => (

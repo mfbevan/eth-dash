@@ -11,7 +11,8 @@ export const PageSubtitle = chakra(Text, {
   baseStyle: {
     fontSize: "md",
     px: "15px",
-    textAlign: "center"
+    textAlign: "center",
+    maxW: "2xl",
   },
 });
 
