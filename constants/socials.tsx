@@ -17,6 +17,11 @@ export const socials: ISocials[] = [
     icon: <BsGithub size={ICON_SIZE} />,
   },
   {
+    label: "eth-dash-extension",
+    link: "https://github.com/mfbevan/eth-dash-extension",
+    icon: <BsGithub size={ICON_SIZE} />,
+  },
+  {
     label: "@mfbevan",
     link: "https://twitter.com/mfbevan",
     icon: <BsTwitter size={ICON_SIZE} />,

@@ -1,9 +1,9 @@
 import { HStack, IconButton, Tooltip } from "@chakra-ui/react";
 import { MouseEvent, Dispatch, SetStateAction } from "react";
 import { BsCardList, BsListTask } from "react-icons/bs";
-import { TiThLarge } from "react-icons/ti";
 import { FaThLarge } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
+import { TiThLarge } from "react-icons/ti";
 
 export enum IDashboardSize {
   Small = "size",

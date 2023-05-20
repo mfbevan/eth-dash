@@ -9,10 +9,12 @@ import {
   Box,
   HStack,
 } from "@chakra-ui/react";
-import { IDashboard } from "../constants";
-import { DashboardTag } from "./tags";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
+
+import { IDashboard } from "../constants";
+
+import { DashboardTag } from "./tags";
 
 export const DashboardCardDetailed = ({
   name,
