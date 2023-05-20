@@ -74,5 +74,7 @@ const Body = chakra(Text, {
 });
 
 const StyledImage = chakra(Image, {
-  baseStyle: {},
+  baseStyle: {
+    rounded: "md",
+  },
 });
