@@ -74,6 +74,14 @@ export const dashboards: IDashboard[] = [
     tags: [IDashboardTag.General],
   },
   {
+    name: "Ethereum Roadmap",
+    description:
+      "Everything you need to know about the Ethereum roadmap: The Merge, Surge, Scourge, Verge, Purge and Splurge.",
+    url: "https://ethroadmap.com/:",
+    image: "ethroadmap.jpg",
+    tags: [IDashboardTag.General],
+  },
+  {
     name: "Project Sunshine",
     description:
       "A dashboard to measure the health of Ethereum's decentralization.",
