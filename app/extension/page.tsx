@@ -1,22 +1,24 @@
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import Link from "next/link";
+'use client';
+
+import { Text, useColorModeValue } from '@chakra-ui/react';
+import Link from 'next/link';
 
 import {
   PageContainer,
   PageTitle,
   PageSubtitle,
   ExtensionContent,
-} from "../../components";
-import { poppinsBody } from "../../styles/fonts";
+} from '../../components';
+import { poppinsBody } from '../../styles/fonts';
 
 export default function Extension() {
   return (
     <PageContainer className={poppinsBody.className}>
       <PageTitle>Eth Dash Extension</PageTitle>
       <PageSubtitle pb="10px">
-        Seamlessly access all your favourite Ethereum dashboards in one
+        Seamlessly access all your favorite Ethereum dashboards in one
         convenient location. Monitor the latest network stats, keep an eye on
-        Ethereum staking, and even monitor your favourite wallets, with plenty
+        Ethereum staking, and even monitor your favorite wallets, with plenty
         more features coming soon!
       </PageSubtitle>
       <Link
@@ -25,7 +27,7 @@ export default function Extension() {
       >
         <Text
           textDecoration="underline"
-          color={useColorModeValue("teal", "cyan")}
+          color={useColorModeValue('teal', 'cyan')}
         >
           Download here
         </Text>

@@ -1,4 +1,6 @@
-import { chakra, Flex, Text, Image } from "@chakra-ui/react";
+'use client';
+
+import { chakra, Flex, Text, Image } from '@chakra-ui/react';
 
 export const ExtensionContent = () => (
   <Flex flexDirection="column" gap="20px" pt="20px">
@@ -26,7 +28,7 @@ export const ExtensionContent = () => (
     <StyledContainer>
       <Header>📚 Ethereum Dashboards (powered by ethdash.xyz)</Header>
       <Body>
-        ethdash.xyz is now even closer, with all of your favourite dashboards
+        ethdash.xyz is now even closer, with all of your favorite dashboards
         available in a handy chrome extension
       </Body>
       <StyledImage src="extension-images/dashboards.png" alt="Dashboards" />
@@ -48,33 +50,33 @@ export const ExtensionContent = () => (
 
 const StyledContainer = chakra(Flex, {
   baseStyle: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    p: "20px",
-    borderRadius: "10px",
-    boxShadow: "base",
-    gap: "20px",
-    maxW: "2xl",
-    mx: "10px",
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    p: '20px',
+    borderRadius: '10px',
+    boxShadow: 'base',
+    gap: '20px',
+    maxW: '2xl',
+    mx: '10px',
   },
 });
 
 const Header = chakra(Text, {
   baseStyle: {
-    fontSize: "xl",
+    fontSize: 'xl',
   },
 });
 
 const Body = chakra(Text, {
   baseStyle: {
-    fontSize: "md",
+    fontSize: 'md',
   },
 });
 
 const StyledImage = chakra(Image, {
   baseStyle: {
-    rounded: "md",
+    rounded: 'md',
   },
 });

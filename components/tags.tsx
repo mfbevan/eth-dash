@@ -1,6 +1,8 @@
-import { Tag } from "@chakra-ui/react";
+'use client';
 
-import { IDashboardTag, TagColor } from "../constants";
+import { Tag } from '@chakra-ui/react';
+
+import { IDashboardTag, TagColor } from '../constants';
 
 export const DashboardTag = ({ tag }: { tag: IDashboardTag }) => (
   <Tag variant="solid" colorScheme={TagColor[tag]}>

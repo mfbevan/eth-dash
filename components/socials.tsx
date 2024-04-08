@@ -1,6 +1,8 @@
-import { HStack, Tooltip, Link } from "@chakra-ui/react";
+'use client';
 
-import { socials } from "../constants";
+import { HStack, Tooltip, Link } from '@chakra-ui/react';
+
+import { socials } from '../constants';
 
 export const Socials = () => (
   <HStack spacing="30px">

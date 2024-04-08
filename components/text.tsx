@@ -1,18 +1,20 @@
-import { chakra, Text } from "@chakra-ui/react";
+'use client';
+
+import { chakra, Text } from '@chakra-ui/react';
 
 export const PageTitle = chakra(Text, {
   baseStyle: {
-    fontSize: "3rem",
-    textAlign: "center",
+    fontSize: '3rem',
+    textAlign: 'center',
   },
 });
 
 export const PageSubtitle = chakra(Text, {
   baseStyle: {
-    fontSize: "md",
-    px: "15px",
-    textAlign: "center",
-    maxW: "2xl",
+    fontSize: 'md',
+    px: '15px',
+    textAlign: 'center',
+    maxW: '2xl',
   },
 });
 
@@ -21,6 +23,6 @@ export const PageSubtitle = chakra(Text, {
  */
 export const InlineLink = chakra(Text, {
   baseStyle: {
-    textDecor: "underline",
+    textDecor: 'underline',
   },
 });
