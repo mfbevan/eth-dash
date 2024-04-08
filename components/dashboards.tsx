@@ -1,13 +1,15 @@
-import { Flex, chakra, VStack, HStack, Stack } from "@chakra-ui/react";
-import { ReactElement, ReactNode, useEffect, useState } from "react";
+'use client';
 
-import { dashboards, IDashboard, IDashboardTag } from "../constants";
+import { Flex, chakra, VStack, HStack, Stack } from '@chakra-ui/react';
+import { ReactElement, ReactNode, useEffect, useState } from 'react';
 
-import { DashboardCardDetailed } from "./detailed-card";
-import { DashboardListItem } from "./list-view.";
-import { IDashboardSize, SizeSelector } from "./size-selector";
-import { DashboardCard } from "./small-card";
-import { TagSelector } from "./tag-selector";
+import { dashboards, IDashboard, IDashboardTag } from '../constants';
+
+import { DashboardCardDetailed } from './detailed-card';
+import { DashboardListItem } from './list-view.';
+import { IDashboardSize, SizeSelector } from './size-selector';
+import { DashboardCard } from './small-card';
+import { TagSelector } from './tag-selector';
 
 const DashboardComponent = (
   dashboard: IDashboard
@@ -33,7 +35,7 @@ export const Dashboards = () => {
 
   return (
     <VStack pt="20px">
-      <Stack direction={{ base: "column", sm: "row" }}>
+      <Stack direction={{ base: 'column', sm: 'row' }}>
         <TagSelector
           selectedTag={selectedTag}
           setSelectedTag={setSelectedTag}
@@ -56,9 +58,9 @@ export const Dashboards = () => {
 
 const DashboardContainer = chakra(Flex, {
   baseStyle: {
-    flexFlow: "row wrap",
-    display: "flex",
-    justifyContent: "center",
-    justify: "center",
+    flexFlow: 'row wrap',
+    display: 'flex',
+    justifyContent: 'center',
+    justify: 'center',
   },
 });

@@ -1,15 +1,3 @@
 {
-  "extends": "next",
-  "rules": {
-    "import/order": [
-      2,
-      {
-        "newlines-between": "always",
-        "alphabetize": { "order": "asc", "caseInsensitive": true }
-      }
-    ],
-    "arrow-body-style": 2,
-    "no-undef": 0,
-    "no-unused-vars": 0
-  }
+  "extends": "next/core-web-vitals"
 }

@@ -1,14 +1,16 @@
-import { HStack, IconButton, Tooltip } from "@chakra-ui/react";
-import { MouseEvent, Dispatch, SetStateAction } from "react";
-import { BsCardList, BsListTask } from "react-icons/bs";
-import { FaThLarge } from "react-icons/fa";
-import { IconType } from "react-icons/lib";
-import { TiThLarge } from "react-icons/ti";
+'use client';
+
+import { HStack, IconButton, Tooltip } from '@chakra-ui/react';
+import { MouseEvent, Dispatch, SetStateAction } from 'react';
+import { BsCardList, BsListTask } from 'react-icons/bs';
+import { FaThLarge } from 'react-icons/fa';
+import { IconType } from 'react-icons/lib';
+import { TiThLarge } from 'react-icons/ti';
 
 export enum IDashboardSize {
-  Small = "size",
-  Detailed = "detailed",
-  List = "list",
+  Small = 'size',
+  Detailed = 'detailed',
+  List = 'list',
 }
 
 interface IDashboardDetails {
@@ -17,9 +19,9 @@ interface IDashboardDetails {
 }
 
 const DashboardSizeDetails: Record<IDashboardSize, IDashboardDetails> = {
-  [IDashboardSize.Small]: { label: "Card View", Icon: TiThLarge },
-  [IDashboardSize.Detailed]: { label: "Detailed Card View", Icon: FaThLarge },
-  [IDashboardSize.List]: { label: "List View", Icon: BsListTask },
+  [IDashboardSize.Small]: { label: 'Card View', Icon: TiThLarge },
+  [IDashboardSize.Detailed]: { label: 'Detailed Card View', Icon: FaThLarge },
+  [IDashboardSize.List]: { label: 'List View', Icon: BsListTask },
 };
 
 interface ISizeSelector {
@@ -46,7 +48,7 @@ export const SizeSelector = ({
               aria-label={label}
               icon={<Icon />}
               onClick={() => handleSelect(size)}
-              colorScheme={selectedSize === size ? "teal" : "gray"}
+              colorScheme={selectedSize === size ? 'teal' : 'gray'}
             />
           </Tooltip>
         );

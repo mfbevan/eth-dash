@@ -1,17 +1,19 @@
-import { Flex, Spacer, Text } from "@chakra-ui/react";
-import Link from "next/link";
+'use client';
 
-import { DarkModeButton } from "./dark-mode";
-import { PageTitle } from "./text";
+import { Flex, Spacer, Text } from '@chakra-ui/react';
+import Link from 'next/link';
+
+import { DarkModeButton } from './dark-mode';
+import { PageTitle } from './text';
 
 const navigationItems: { label: string; path: string }[] = [
   {
-    label: "Dashboards",
-    path: "/",
+    label: 'Dashboards',
+    path: '/',
   },
   {
-    label: "Extension",
-    path: "/extension",
+    label: 'Extension',
+    path: '/extension',
   },
 ];
 
