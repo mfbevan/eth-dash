@@ -77,7 +77,7 @@ export const dashboards: IDashboard[] = [
     name: "Ethereum Roadmap",
     description:
       "Everything you need to know about the Ethereum roadmap: The Merge, Surge, Scourge, Verge, Purge and Splurge.",
-    url: "https://ethroadmap.com/:",
+    url: "https://ethroadmap.com",
     image: "ethroadmap.jpg",
     tags: [IDashboardTag.General],
   },
