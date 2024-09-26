@@ -33,6 +33,14 @@ export interface IDashboard {
 }
 
 export const dashboards: IDashboard[] = [
+   {
+  name: "Ethernow",
+  description:
+  "Real-time transaction explorer that enables you to see the Ethereum Mainnet pre-chain layer",
+  url: "https://ethernow.xyz",
+  image: "ethernow.png"
+  tags: [IDashboardTag.General],
+  },
   {
     name: "L2 Beat",
     description:
