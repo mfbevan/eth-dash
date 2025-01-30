@@ -362,4 +362,11 @@ export const dashboards: IDashboard[] = [
     image: "jiffyscan.jpg",
     tags: [IDashboardTag.AccountAbstraction],
   },
+  {
+    name: "growthepie",
+    description: "Ethereum and Layer 2 analytics. Covering fundamental metrics, economics, blockspace usage, and much more.",
+    url: "https://www.growthepie.xyz/",
+    image: "growthepie.jpg",
+    tags: [IDashboardTag.General],
+  },
 ];
